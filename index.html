@@ -17,6 +17,9 @@
             gap: 10px;
             justify-content: center;
         }
+        .gallery-item {
+            position: relative;
+        }
         .gallery img {
             max-width: 30%;
             height: auto;
@@ -27,14 +30,32 @@
         .gallery img:hover {
             border-color: #777;
         }
+        .caption {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            background-color: rgba(0, 0, 0, 0,5);
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+        }
     </style>
     </head>
 <body>
     <h1>Nuotraukų Galerija</h1>
     <div class="gallery">
-        <img src="image1.jpg" alt="Nuotrauka 1">
-        <img src="image2.jpg" alt="Nuotrauka 2">
-        <img src="image3.jpg" alt="Nuotrauka 3">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Nuotrauka 1">
+            <div class="caption">Lieptas į ežerą tarp kalnų</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Nuotrauka 2">
+            <div class="caption">Kalnų atspindys ežere</div>
+        </div>
+        <div class="gallery-item">
+            <img src="image3.jpg" alt="Nuotrauka 3">
+            <div class="caption">Vakaro kalnai</div>
+        </div>    
     </div>
 </body>
 </body>
